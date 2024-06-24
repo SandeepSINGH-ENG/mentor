@@ -1,0 +1,262 @@
+:root{
+    --Almost-White: hsl(0, 0%, 98%);
+--Medium-Gray: hsl(0, 0%, 41%);
+--Almost-Black: hsl(0, 0%, 8%);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+p, a{
+    text-decoration: none;
+    color: var(--Medium-Gray);
+    text-transform: capitalize;
+}
+a:hover{
+    color: var(--Almost-Black);
+}
+.banner-img {
+    text-align: right;
+}
+.banner-img img {
+    width: 83%;
+}
+main {
+    max-width: 1200px;
+    margin: 25px auto 71px;
+    position: relative;
+}
+.brands.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 466px;
+    position: absolute;
+    bottom: 0;
+}
+main.flex h1 {
+    font-size: 5rem;
+}
+main p {
+    margin-top: 48px;
+    text-transform: none;
+    max-width: 434px;
+    line-height: 24px;
+    margin-bottom: 48px;
+}
+h1,h2{
+    font-weight:700;
+}
+body{
+    font-size: 18px;
+    background-color: var(--Almost-White);
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.col-50{
+    width: 50%;
+}
+.col-60, .col-4{
+    width: 60%;
+}
+.col-40, .col-4{
+    width: 40%;
+}
+.col-100{
+    width: 100%;
+}
+
+.border-btn {
+    background-color: var(--Almost-White);
+    color: var(--Almost-Black);
+    padding: 10px 20px;
+    border-radius: 14px;
+    border: 1px solid var(--Almost-Black);
+    margin-left: 33px;
+}
+.solid-btn {
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    padding: 15px 25px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.solid-btn:hover {
+    color: var(--Almost-Black);
+    background: var(--Almost-White);
+    border: 1px solid var(--Almost-Black);
+}
+@media only screen and (min-width: 600px) {
+nav ul li {
+    position: relative;
+}
+li.active ul {
+    display: block;
+    position: absolute;
+    background: white;
+    margin-top: 11px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 11px 1px #00000033;
+    right: 0;
+    width: max-content;
+    z-index: 999999;
+}
+li.active ul li {
+    padding: 0px 0px 10px;
+}
+li.active ul img {
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+li.active ul li:last-child {
+    padding-bottom: 0px !important;
+}
+}
+/* nav bar design */
+header {
+    padding: 24px;
+    max-width: 1600px;
+    margin: auto;
+}
+nav li ul {
+    display: none;
+}
+nav ul {
+    list-style: none;
+}
+header {
+    padding: 24px;
+}
+.logo {
+    margin-right: 70px;
+}
+nav .flex {
+    gap: 46px;
+}
+nav li img {
+    margin-left: 6px;
+    position: relative;
+    top: -2px;
+}
+header .col-40 {
+    text-align: right;
+}
+.mobile-menu, img#closemenu, .extra-actions{
+    display: none;
+}
+
+/* menu for mobile */
+@media only screen and (max-width: 600px) {
+
+.col-100, .col-4, .col-50, .col-60, .col-4, .banner-img img{
+    width: 100%;
+}
+.mobile-menu{
+    display: block;
+}
+header nav, .action{
+    display: none;
+}
+.mobile-flex {
+    justify-content: space-between;
+}
+main.flex {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+main p {
+    max-width: max-content;
+}
+.brands.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    position: unset;
+    bottom: 0;
+    margin-top: 50px;
+    margin: 65px auto;
+}
+.mob-flex {
+    display: flex;
+    justify-content: center;
+}
+main.flex h1 {
+    font-size: 2rem;
+    margin-top: 50px;
+}
+img#closemenu {
+    position: absolute;
+    right: 13px;
+    top: 14px;
+    display: block !important;
+}
+nav.mobile-nav ul.flex {
+    padding-top: 80px;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding-left: 19px;
+}
+.extra-actions{
+    display: block;
+}
+nav ul li {
+    position: relative;
+    width: inherit;
+}
+li.extra-actions {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 91%;
+}
+a.border-btn {
+    margin-left: 0px;
+    width: -webkit-fill-available;
+}
+li.active ul {
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+li.active ul li {
+    margin-bottom: 15px;
+}
+li.active ul li img  {
+    padding-right: 15px;
+}
+}  
+
+/* mobile nev expand */
+.mobile-nav {
+    display: block !important;
+    position: fixed;
+    background: #00000087;
+    height: 100vh;
+    z-index: 999;
+    color: white;
+    top: 0;
+    width: 100%;
+    right: 0;
+}
+nav.mobile-nav ul.flex {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    background: white;
+    margin-left: auto;
+    height: 100%;
+}
+.active .arrow {
+    transform: rotate(180deg);
+}

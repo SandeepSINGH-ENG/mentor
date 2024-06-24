@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="flex">
+    <div class="col-60">
+      <div class="flex mobile-flex">
+        <div class="logo"><img src="images/logo.svg" alt="logo"></div>
+        <div class="mobile-menu" id="open-nav"><img src="images/icon-menu.svg"></div>
+        <nav id="nav">
+          <img src="images/icon-close-menu.svg" id="closemenu">
+          <ul class="flex">
+            <li id="feature" class="parent" onclick="submenu('feature')"><a href="#">Features</a><img class="arrow"
+                src="images/icon-arrow-down.svg">
+              <ul>
+                <li><a href="/"><img src="images/icon-todo.svg"> <span>Todo list</span></a></li>
+                <li><a href="/"><img src="images/icon-calendar.svg"> <span>Calender</span></a></li>
+                <li><a href="#"><img src="images/icon-reminders.svg"> <span>Reminders</span></a></li>
+                <li><a href="#"><img src="images/icon-planning.svg"> <span>planning</span></a></li>
+              </ul>
+            </li>
+            <li id="company" class="parent" onclick="submenu('company')"><a href="#">Company</a> <img class="arrow"
+                src="images/icon-arrow-down.svg">
+              <ul>
+                <li><a href="#"><span>History</span></a></li>
+                <li><a href="index.html"><span>Our Team</span></a></li>
+                <li><a href="#"><span>Blog</span></a></li>
+              </ul>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+            <li class="extra-actions">
+              <a href="#">Login</a>
+              <a href="#" class="border-btn">Register</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="col-40 action">
+
+      <a href="#">Login</a>
+      <a href="#" class="border-btn">Register</a>
+    </div>
+    </nav>
+  </header>
+  <main class="flex">
+    <div class="col-50">
+      <div class="mob-flex">
+        <h1>Make</h1>
+        <h1>remote work</h1>
+      </div>
+
+      <p>Get your team in sync, no matter your location.
+        Streamline processes, create team rituals, and watch productivity soar.</p>
+      <a href="" class="solid-btn">Learn more</a>
+      <div class="brands flex">
+        <img src="images/client-databiz.svg" alt="databiz">
+        <img src="images/client-audiophile.svg" alt="audiophile">
+        <img src="images/client-meet.svg" alt="meet">
+        <img src="images/client-maker.svg" alt="maker">
+      </div>
+    </div>
+    <div class="col-50 banner-img">
+      <picture>
+        <!-- Large devices (desktops) -->
+        <source srcset="images/image-hero-desktop.png" media="(min-width: 1200px)">
+        <!-- Small devices (phones) -->
+        <source srcset="images/image-hero-mobile.png" media="(max-width: 600px)">
+        <!-- Fallback image -->
+        <img src="images/image-hero-desktop.png">
+      </picture>
+
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
